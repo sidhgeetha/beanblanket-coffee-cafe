@@ -1,4 +1,4 @@
-## 💻Coffee app - Landing page
+## Task : Coffee app - Landing page
 
 ## 🚀 BeanBlanket - coffee-cafe 
 
