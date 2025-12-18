@@ -90,11 +90,14 @@
   <main class>
 
     <!-- hero-sec-->
-    <section class="bg-stone-100 min-h-screen flex flex-col md:flex-row ">
+    <section class="bg-stone-100 flex flex-col md:flex-row md:min-h-screen ">
       <!-- Left side -->
       <div
-        class="hero-left w-full md:w-1/2 flex flex-col  justify-center text-start md:p-10">
-        <h1 class="text-4xl md:text-5xl sm:text-xl font-bold text-stone-900 mb-4">
+        class="hero-left w-full md:w-1/2   flex flex-col justify-center
+           items-center md:items-start
+           text-center md:text-start
+           px-4 py-32 sm:px-8 md:p-10">
+        <h1 class="text-5xl md:text-5xl font-bold text-stone-900 mb-4">
           Enjoy your sip of coffee with <span
             class="font-serif leading-relaxed text-amber-800">
             BeanBlanket</span>
@@ -102,30 +105,31 @@
 
    
 
-        <div class="flex  flex-row items-center">
           <a href="#order"
             class=" hero-button   rounded-md font-medium text-lg   border p-3 bg-amber-800 text-white hover:text-amber-200">
             Order Now
           </a>
          
-        </div>
+     
       </div>
 
       <!-- Right Columnn -->
-      <div class="md:w-1/2 h-screen relative bg-cover bg-center"
+      <div class="w-full md:w-1/2 h-64 sm:h-64 md:h-auto bg-cover bg-center"
         style="background-image: url('/assets/coffee.jpg');">
 
         <div
-          class="relative z-10 p-6 md:p-12 flex flex-col justify-end  h-full">
-          <p class="text-white font-serif   text-xs md:text-xl">
+          class="h-full flex flex-col justify-end p-4 sm:p-6 md:p-1">
+          <p class="text-2xl text-white font-serif  sm:text-base md:text-xl">
             The season changes! Our Winter 2025 drinks events coming soon!
 
           </p>
 
+          text-5xl md:text-5xl
+
           <div class="flex flex-row items-center text-center">
 
             <a href="#booknow"
-              class="text-amber-200 flex flex-row text-start font-bold underline decoration-yellow-300  underline-offset-2 hover:text-amber-300">Book
+              class="text-2xl text-amber-200 flex flex-row text-start font-bold underline decoration-yellow-300  underline-offset-2 hover:text-amber-300">Book
               now</a>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16 "
@@ -151,7 +155,7 @@
 
           <div class="card-bg bg-white ">
             <img src="/assets/item1.jpg" alt="Pick Up"
-              class="w-full h-48 sm:h-64 object-cover">
+              class="w-full h-40 sm:h-56 md:h-64 object-cover">
             <div class="p-4 sm:p-6 text-center">
               <h3 class="text-xl sm:text-2xl font-semibold mb-2">Black
                 coffee</h3>
@@ -165,7 +169,7 @@
 
           <div class="card-bg  bg-white">
             <img src="/assets/item3.jpg" alt="Pick Up"
-              class="w-full h-48 sm:h-64 object-cover">
+              class="w-full h-40 sm:h-56 md:h-64 object-cover">
             <div class="p-4 sm:p-6 text-center">
               <h3 class="text-xl sm:text-2xl font-semibold mb-2">Mocha
                 green</h3>
@@ -178,7 +182,7 @@
           </div>
           <div class="card-bg  bg-white">
             <img src="/assets/item4.jpg" alt="Pick Up"
-              class="w-full h-48 sm:h-64 object-cover">
+              class="w-full h-40 sm:h-56 md:h-64 object-cover">
             <div class="p-4 sm:p-6 text-center">
               <h3 class="text-xl sm:text-2xl font-semibold mb-2">Black
                 coffee</h3>
@@ -191,7 +195,7 @@
           </div>
           <div class="card-bg  bg-white">
             <img src="/assets/item5.jpg" alt="Pick Up"
-              class="w-full h-48 sm:h-64 object-cover">
+              class="w-full h-40 sm:h-56 md:h-64 object-cover">
             <div class="p-4 sm:p-6 text-center">
               <h3 class="text-xl sm:text-2xl font-semibold mb-2">Latte</h3>
 
@@ -203,7 +207,7 @@
           </div>
           <div class="card-bg  bg-white">
             <img src="/assets/item6.jpg" alt="Pick Up"
-              class="w-full h-48 sm:h-64 object-cover">
+              class="w-full h-40 sm:h-56 md:h-64 object-cover">
             <div class="p-4 sm:p-6 text-center">
               <h3 class="text-xl sm:text-2xl font-semibold mb-2">Expresso</h3>
 
@@ -216,7 +220,7 @@
 
           <div class="card-bg bg-white">
             <img src="/assets/item8.jpg" alt="Pick Up"
-              class="w-full h-48 sm:h-64 object-cover">
+              class="w-full h-40 sm:h-56 md:h-64 object-cover">
             <div class="p-4 sm:p-6 text-center">
               <h3 class="text-xl sm:text-2xl font-semibold mb-2">Americano</h3>
 
@@ -239,7 +243,7 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
 
             <!-- Pick Up orders -->
-            <div class="bg-white h-70 flex flex-col justify-end bg-cover bg-center " style="background-image: url('/assets/shop.jpg');">
+            <div class="bg-white h-72 flex flex-col justify-end bg-cover bg-center " style="background-image: url('/assets/shop.jpg');">
             
                 <h3
                   class="text-xl sm:text-2xl font-semibold mb-2 ml-4 text-white underline underline:text-stone-200 underline-offset-2">Pick
@@ -249,7 +253,7 @@
 
             </div>
             <!-- Order Card -->
-            <div class="bg-white h-70 flex flex-col justify-end bg-cover bg-center " style="background-image: url('/assets/shop3.jpg');">
+            <div class="bg-white h-72 flex flex-col justify-end bg-cover bg-center " style="background-image: url('/assets/shop3.jpg');">
             
                 <h3
                   class="text-xl sm:text-2xl font-semibold mb-2 ml-4 text-white underline underline:text-stone-200 underline-offset-2">Pick
