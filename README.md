@@ -9,7 +9,7 @@
  
 🚀 Link :https://beanblanket-coffee-cafe.vercel.app/
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 
 
