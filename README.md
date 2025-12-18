@@ -21,10 +21,10 @@
 ![alt text](image-1.png)
 
 ## 🚀 Learnings
-• Focuded on layout structure using tailwindcss
-• Grid layout to keep elements as cards
-• Inspiration from coffee apps
-• Used colourhunt for choosing colors (https://colorhunt.co/)
+- Focuded on layout structure using tailwindcss
+- Grid layout to keep elements as cards
+- Inspiration from coffee apps
+- Used colourhunt for choosing colors (https://colorhunt.co/)
 
 
 
