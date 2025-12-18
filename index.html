@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/assets/latte-art.png" type="image/x-icon">
+
+  <title>BeanBlanket-coffee-cafe</title>
+
+</head>
+<body>
+
+  <header
+    class="header px-10 py-6  flex text-justify-between w-full mx-auto items-center lg:px-12 fixed top-0 left-0 z-50 border-b border-white/20">
+
+    <!-- Logo -->
+    <div id="home"
+      class="w-full max-w-7xl px-10 lg:px-6 sm:px-6 flex lg:justify-start sm:justify-start">
+      <!-- <h3 class="text-stone-900 text-3xl font-bold font-serif">BeanBlanket</h3> -->
+      <a href="#"
+        class="text-white text-3xl font-bold font-serif">BeanBlanket</a>
+    </div>
+
+    <!-- Mobile Toggle Checkbox -->
+
+    <input type="checkbox" id="menuToggle" class="peer hidden" />
+
+    <!-- Hamburger / Close Button -->
+    <label for="menuToggle"
+      class=" sm:hidden cursor-pointer w-10 h-10 flex items-center justify-center group ">
+
+      <!-- Hamburger Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg"
+        class=" block peer-checked:hidden text-stone-300"
+        width="60" height="60" viewBox="0 0 24 24">
+        <path fill="currentColor" fill-rule="evenodd"
+          d="M20.75 7a.75.75 0 0 1-.75.75H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 .75.75m0 5a.75.75 0 0 1-.75.75H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 .75.75m0 5a.75.75 0 0 1-.75.75H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 .75.75"
+          clip-rule="evenodd" />
+      </svg>
+
+      <!-- Close Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg"
+        class="hidden peer-checked:block text-white" width="32" height="32"
+        viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path
+          fill="currentColor"
+          d="m12 13.4l-2.917 2.925q-.277.275-.704.275t-.704-.275q-.275-.275-.275-.7t.275-.7L10.6 12L7.675 9.108Q7.4 8.831 7.4 8.404t.275-.704q.275-.275.7-.275t.7.275L12 10.625L14.892 7.7q.277-.275.704-.275t.704.275q.3.3.3.713t-.3.687L13.375 12l2.925 2.917q.275.277.275.704t-.275.704q-.3.3-.712.3t-.688-.3z" /></svg>
+    </label>
+
+    <!-- Navigation & Social Links -->
+    <div
+      class="hidden  sm:flex flex-col sm:flex-row items-center justify-between text-stone-300 space-y-6 sm:space-y-0 sm:space-x-10 absolute sm:static top-20 left-0 w-full sm:w-auto   py-6 sm:py-0">
+
+      <!-- Nav Links -->
+      <ul
+        class="flex flex-col sm:flex-row space-y-6 text-white sm:space-y-0 sm:space-x-10 font-thin font-montserrat text-xl md:text-sm lg:text-md px-10">
+        <li><a href="#whatson"
+            class="hover:underline text-nowrap underline-offset-10 font-medium">WHAT'S
+            ON</a></li>
+
+        <li><a href="#order"
+            class="hover:underline text-nowrap underline-offset-10  font-medium">ORDER</a></li>
+        <li><a href="#giftcards"
+            class="hover:underline text-nowrap underline-offset-10 font-medium">GIFT
+            CARDS</a></li>
+      </ul>
+
+      <!-- Social Icons -->
+      <div class="flex gap-4 mt-4 sm:mt-0">
+        <a href="https://github.com/sidhgeetha" target="_blank"
+          class="flex items-center justify-center border border-yellow-100/20 w-14 h-14 rounded-full hover:border-yellow-700/50 hover:scale-105">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            class="text-yellow-100"
+            class="text-stone-700"
+            viewBox="0 0 24 24"><!-- Icon from Myna UI Icons by Praveen Juge - https://github.com/praveenjuge/mynaui-icons/blob/main/LICENSE --><g
+              fill="none" stroke="currentColor" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="1.5"><path
+                d="M3 9.4c0-2.24 0-3.36.436-4.216a4 4 0 0 1 1.748-1.748C6.04 3 7.16 3 9.4 3h5.2c2.24 0 3.36 0 4.216.436a4 4 0 0 1 1.748 1.748C21 6.04 21 7.16 21 9.4v5.2c0 2.24 0 3.36-.436 4.216a4 4 0 0 1-1.748 1.748C17.96 21 16.84 21 14.6 21H9.4c-2.24 0-3.36 0-4.216-.436a4 4 0 0 1-1.748-1.748C3 17.96 3 16.84 3 14.6zm14-2.9h.5" /><path
+                d="M15.462 11.487a3.5 3.5 0 1 1-6.925 1.026a3.5 3.5 0 0 1 6.925-1.026" /></g></svg>
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class>
+
+    <!-- hero-section -->
+    <section class="bg-stone-100 min-h-screen flex flex-col md:flex-row">
+      <!-- Left Column -->
+      <div
+        class="hero-left md:w-1/2 flex flex-col  justify-center text-enter p-10">
+        <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-4">
+          Enjoy your sip of coffee with <span
+            class="font-serif leading-relaxed text-amber-800">
+            BeanBlanket</span>
+        </h1>
+
+        <div class="flex  flex-row items-center">
+          <a href="#order"
+            class=" hero-button   rounded-md font-semibold text-lg underline decoration-rose-950 underline-offset-2  transition-colors duration-300 hover:decoration-rose-600">
+            Order Now
+          </a>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16 "
+              viewBox="0 0 24 24"><!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE --><path
+                fill="currentColor"
+                d="m12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" /></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="md:w-1/2 h-screen relative bg-cover bg-center"
+        style="background-image: url('/assets/hero.jpg');">
+
+        <div class="relative z-10 p-6 md:p-12 flex flex-col justify-end  h-full">
+          <p class="text-white font-serif   text-xs md:text-xl">
+            The season changes! Our Winter 2025 drinks events coming soon!
+            
+          </p>
+
+          <button class="text-white text-start font-bold underline decoration-yellow-300 text-yellow-200 underline-offset-2 hover:text-amber-300">Book now</button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Whatson items -->
+    <section id="whatson" class="py-12 bg-white">
+
+      <div class="layout-container max-w-6xl mx-auto px-4 ">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-6 sm:gap-8 ">
+
+          <div class="card-bg bg-white ">
+            <img src="/assets/item1.jpg" alt="Pick Up"
+              class="w-full h-48 sm:h-64 object-cover">
+            <div class="p-4 sm:p-6 text-center">
+              <h3 class="text-xl sm:text-2xl font-semibold mb-2">Black
+                coffee</h3>
+
+              <button
+                class=" text-stone-700 border  hover:bg-amber-500 hover:text-white border-amber-600 px-4 sm:px-6 py-2 rounded-md text-sm sm:text-base">
+                View menu
+              </button>
+            </div>
+          </div>
+
+          <div class="card-bg  bg-white">
+            <img src="/assets/item3.jpg" alt="Pick Up"
+              class="w-full h-48 sm:h-64 object-cover">
+            <div class="p-4 sm:p-6 text-center">
+              <h3 class="text-xl sm:text-2xl font-semibold mb-2">Mocha
+                green</h3>
+
+              <button
+                class=" text-stone-700 border  hover:bg-amber-500 hover:text-white border-amber-600 px-4 sm:px-6 py-2 rounded-md text-sm sm:text-base">
+                View menu
+              </button>
+            </div>
+          </div>
+          <div class="card-bg  bg-white">
+            <img src="/assets/item4.jpg" alt="Pick Up"
+              class="w-full h-48 sm:h-64 object-cover">
+            <div class="p-4 sm:p-6 text-center">
+              <h3 class="text-xl sm:text-2xl font-semibold mb-2">Black
+                cofee</h3>
+
+              <button
+                class=" text-stone-700 border  hover:bg-amber-500 hover:text-white border-amber-600 px-4 sm:px-6 py-2 rounded-md text-sm sm:text-base">
+                View menu
+              </button>
+            </div>
+          </div>
+          <div class="card-bg  bg-white">
+            <img src="/assets/item5.jpg" alt="Pick Up"
+              class="w-full h-48 sm:h-64 object-cover">
+            <div class="p-4 sm:p-6 text-center">
+              <h3 class="text-xl sm:text-2xl font-semibold mb-2">Latte</h3>
+
+              <button
+                class=" text-stone-700 border  hover:bg-amber-500 hover:text-white border-amber-600 px-4 sm:px-6 py-2 rounded-md text-sm sm:text-base">
+                View menu
+              </button>
+            </div>
+          </div>
+          <div class="card-bg  bg-white">
+            <img src="/assets/item6.jpg" alt="Pick Up"
+              class="w-full h-48 sm:h-64 object-cover">
+            <div class="p-4 sm:p-6 text-center">
+              <h3 class="text-xl sm:text-2xl font-semibold mb-2">Expresso</h3>
+
+              <button
+                class=" text-stone-700  hover:bg-amber-500 hover:text-white border border-amber-600 px-4 sm:px-6 py-2 rounded-md text-sm sm:text-base">
+                View menu
+              </button>
+            </div>
+          </div>
+
+          <div class="card-bg bg-white">
+            <img src="/assets/item8.jpg" alt="Pick Up"
+              class="w-full h-48 sm:h-64 object-cover">
+            <div class="p-4 sm:p-6 text-center">
+              <h3 class="text-xl sm:text-2xl font-semibold mb-2">Americano</h3>
+
+              <button
+                class=" text-stone-700 border hover:bg-amber-500 hover:text-white border-amber-600 px-4 sm:px-6 py-2 rounded-md text-sm sm:text-base">
+                Add to cart
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- order  -->
+
+      <section id="order" class="py-12 bg-stone-100">
+
+        <div class="layout-container max-w-6xl mx-auto px-4 ">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+
+            <!-- Pick Up orders -->
+            <div class="bg-white h-150 flex flex-col ">
+              <img src="/assets/shop.jpg" alt="Pick Up"
+                class="w-full h-120 object-cover">
+              <div class="p-4 sm:p-6 text-start">
+                <h3
+                  class="text-xl sm:text-2xl font-semibold mb-2 underline underline:text-stone-200 underline-offset-2">Pick
+                  Up</h3>
+                <p class="text-stone-600 mb-4 text-sm sm:text-base">Grab your
+                  coffee from our store quickly and conveniently.</p>
+
+              </div>
+            </div>
+            <!-- Order Card -->
+            <div class="bg-white h-150 flex flex-col ">
+              <img src="/assets/shop3.jpg" alt="Order"
+                class="w-full h-120 object-cover">
+              <div class="p-4 sm:p-6 text-start">
+                <h3
+                  class="text-xl sm:text-2xl font-semibold mb-2 underline underline:text-stone-200 underline-offset-2">Order</h3>
+                <p class="text-stone-600 mb-4 text-sm sm:text-base">Order
+                  online and have your coffee delivered to your doorstep.</p>
+
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- gift cards section -->
+
+        <section id="giftcards" class="py-12 bg-stone-100">
+
+          <div class="layout-container max-w-6xl mx-auto px-4 ">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+
+              <!-- Pick Up orders -->
+              <div
+                class="w-full h-60 flex flex-col  bg-cover bg-center rounded-xl"
+                style="background-image: url('/assets/card1.jpg');">
+
+                <h3
+                  class="font-bold text-2xl font-sans ml-4 mt-4  text-white">BeanBlanket
+                  gift card</h3>
+                <p class="ml-4  text-white font-extrabold">Enjoy 10 % off</p>
+
+              </div>
+
+              <div
+                class="w-full h-60 flex flex-col  bg-cover bg-center rounded-xl"
+                style="background-image: url('/assets/card1.jpg');">
+
+                <h3
+                  class="font-bold text-2xl font-sans ml-4 mt-4  text-white">BeanBlanket
+                  gift card</h3>
+                <p class="ml-4  text-white font-extrabold">Enjoy 10 % off</p>
+
+              </div>
+
+              <div
+                class="w-full h-60 flex flex-col  bg-cover bg-center rounded-xl"
+                style="background-image: url('/assets/card1.jpg');">
+
+                <h3
+                  class="font-bold text-2xl font-sans ml-4 mt-4  text-white">BeanBlanket
+                  gift card</h3>
+                <p class="ml-4  text-white font-extrabold">Enjoy 10 % off</p>
+
+              </div>
+
+            </div>
+
+          </section>
+
+          <!-- <div class="border-t border-gray-700 mt-2 w-full "></div>
+
+         <footer class="bg-rose-950">
+
+         </footer> -->
+
+          <footer
+            class="footer_section bg-rose-950 text-white h-24 flex items-center justify-center">
+            <div
+              class="flex flex-col md:flex-row gap-40 items-center justify-center w-full max-w-6xl px-4">
+
+              <div>
+                <a href="#" class="text-xl font-serif font-bold text-amber-400">
+                  BeanBlanket
+                </a>
+              </div>
+
+              <div>
+                <a class="text-sm">
+                  © 2022 - 2025 BeanBlanket Coffee All Rights Reserved.
+                </a>
+              </div>
+
+              <ul class="flex flex-row gap-6 text-white text-sm">
+                <li><a href="#" class="hover:underline">Privacy</a></li>
+                <li><a href="#" class="hover:underline">Terms &
+                    conditions</a></li>
+                <li><a href="#" class="hover:underline">About</a></li>
+              </ul>
+
+            </div>
+          </footer>
+
+        </main>
+
+      </body>
+    </html>
